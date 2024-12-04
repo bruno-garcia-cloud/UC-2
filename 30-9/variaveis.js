@@ -52,3 +52,4 @@ variavelVazia //undefined
 console.log(variavelVazia)
 //comando que imprime o tipo de valor de variavel
 console.log(typeof variavelVazia)
+
