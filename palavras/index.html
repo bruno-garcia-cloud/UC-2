@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Codificação UTF-8-->
+    <meta charset="UTF-8">
+    <!-- Tornando o site responsivo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Título que aparece na aba do navegador -->
+    <title>Document</title>
+    <!--Vínculo com o arquivo CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Caixa que contém todo o conteúdo do jogo-->
+     <div class="container">
+        <!--Título principal do jogo-->
+       <h1> Descubra a palavra pae</h1>
+       <!-- Imagem no topo do jogo -->
+       <img id="imagem-topo" src="Imagens/si es niña si es niño.jfif" alt="Imagem do topo" style="width:100%; max-width: 200px; height: auto; border-radius: 10px;"/>
+       <!-- Seção onde a palavra secreta misteriosa será mostrada -->
+       <div id="palavra">
+        <h2> Palavra: </h2>
+        <!-- Aqui será atualizada a palavra secreta com as letras e espaços-->
+        <div id="palavra-secreta"></div>
+        
+       </div> 
+
+       <!-- Mostrar o número de letras da palavra secreta -->
+       <div id="numero-letras">
+        <h3 id="numero-letras">Número de letras: 0 </h3>
+       </div>
+
+       <!-- Divisiórioa onde o numero de tentativas restantes será mostrado para o magnata-->
+       
+       <div id="tentativas">
+        <h3>tentativas Restantes gugu: <span id="tentativas-contagem">5</span></h3> 
+       
+        <!-- Caixa de entrada onde o usuario pode digitar uma letra-->
+    <input type="text" id="letra" maxlength="1" placeholder="digite uma letra"/>
+     
+    <!-- Botão que chama a função 'verificaletra'quando pressionado-->
+    <button onclick="verificarLetra()">Chutar</button>
+
+    <!--Aqui será mostrada a mensagem do jogo, informando o resultado do chute-->
+
+    <p id="mensagem"></p>
+<!-- Botão que reinicia o jogo-->
+ <button onclick="reiniciarJogo()">Reiniciar jogo</button>
+<div id="imagem-resultado">
+
+<!-- Imagens que indicam se o chute foi correto ou incorreto-->
+
+<img id="imagem-acerto" src="Imagens/download (1).jfif" alt="Acerto" style="display: none; width: 100px; height: 100px;"/>
+
+<!-- Imagem que aparece quando o jogador erra a letra-->
+<img id="imagem-erro" src="Imagens/pode não man.jfif" alt="Erro"/>
+
+<!-- aqui fazemos a chamada do javascript-->
+<script src="script.js"></script>
+
+
+</body>
+</html>
